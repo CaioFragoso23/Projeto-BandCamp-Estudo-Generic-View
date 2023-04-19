@@ -28,7 +28,7 @@ class SongView(APIView, PageNumberPagination):
         Criaçao de musica
         """
         album = get_object_or_404(Album, pk=pk)
-
+        self.check_object_permissions(request, album)
         serializer = SongSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save(album=album)
