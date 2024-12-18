@@ -1,4 +1,19 @@
-# M5 - BandKamp Generic View
+# Projeto Bandcamp e Generic View
+> Essa API é como uma cópia da base do site BandCamp, com criação de usuários, criação de álbuns, músicas, entre outros.
+
+## Rotas da API
+
+| Rotas | Verbo HTTP | Objetivo|
+| ------- |:-----------:|--------:|
+|/api/users/ | POST | Criação de usuário
+|/api/users/login/ | POST | Autenticação do usuário
+|/api/users/user_id/ | GET | Busca de usuário por id
+|/api/users/user_id/ | PATCH | Atualizar usuário
+|/api/users/user_id/ | DELETE | Deleção de usuário
+|/api/albums/ | POST | Criação de álbum
+|/api/albums/ | GET | Listagem de álbuns
+|/api/albums/album_id/songs/ | GET | Busca de sons de um álbum por id
+|/api/movies/album_id/songs/ | POST | Criação de música
 
 ## Instalação dos pacotes de teste
 
